@@ -8,6 +8,7 @@ if ('serviceWorker' in navigator) {
       userVisibleOnly: true
     }).then(function(sub) {
       console.log('endpoint:', sub.endpoint);
+      document.write(sub.endpoint);
     });
   }).catch(function(error) {
     console.log(':^(', error);
